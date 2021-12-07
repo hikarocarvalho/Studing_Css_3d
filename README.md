@@ -162,9 +162,34 @@ function moveToDown(){
     setPos([0,velocity,0]);
 }
 ```
+#### Css 3D Properties used explanation
 ```css
-    // used to set the vision of the element as 3d object
-    transform-style: preserve-3d;
+    /* 
+        used to set the vision of the element as 3d object 
+    */
+    {
+        transform-style: preserve-3d;
+    }
+    /* 
+        used to set the position of the 3d element => translate3d(x,y,z)
+    */
+    {
+        transform: translate3d(200px,0px,0px);
+    }
+    /*
+        used to rotate the 3d element
+    */
+    {
+        transform:rotateX(90deg);
+    }
+    /*
+        Used to move and rotate or leave the rotation position (note: if the object is rotated you have to set it again. If you try to move the object and you don't, the object moves but the rotation back to "0deg")
+    */
+    {
+        transform:rotateX(90deg) translate3d(0px,0px,150px);
+    }
+    /*
+    */
 ```
 
 # :)
