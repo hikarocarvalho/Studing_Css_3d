@@ -84,7 +84,8 @@ const mousemoveplayer = (e) => {
             if((parseInt(playerX/10)+rotate/100)>=360){
                 rotate = 0;
             }
-            player.style.transform = "rotate3d(0,1,0,"+rotate+"deg) translate3d("+x+"px,26px,"+y+"px)";
+            player.style.transform = 
+            "rotate3d(0,1,0,"+rotate+"deg) translate3d("+x+"px,26px,"+y+"px)";
             player.setAttribute("rotate",rotate);
         }
             playerX = e.pageX;
@@ -183,7 +184,10 @@ function moveToDown(){
         transform:rotateX(90deg);
     }
     /*
-        Used to move and rotate or leave the rotation position (note: if the object is rotated you have to set it again. If you try to move the object and you don't, the object moves but the rotation back to "0deg")
+        Used to move and rotate or leave the rotation position 
+        (note: if the object is rotated you have to set it again. 
+        If you try to move the object and you don't, 
+        the object moves but the rotation back to "0deg")
     */
     {
         transform:rotateX(90deg) translate3d(0px,0px,150px);
